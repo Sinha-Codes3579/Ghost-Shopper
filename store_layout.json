@@ -1,0 +1,344 @@
+{
+  "store_id": "ST1008",
+  "store_name": "Brigade_Bangalore",
+  "city": "Bangalore",
+  "address": "Brigade Road, Bangalore",
+  "open_hours": {
+    "open": "11:00",
+    "close": "22:00"
+  },
+  "image_ref": "Brigade_Road_Store_layout.xlsx",
+  "image_dimensions": {
+    "width": 940,
+    "height": 451
+  },
+  "coordinate_space": "pixel",
+  "cameras": [
+    {
+      "camera_id": "CAM_ENTRY_01",
+      "type": "entry_exit",
+      "description": "Entry/Exit threshold camera \u2014 left wall, monitors the curved entrance door",
+      "covers_zones": [
+        "ENTRY_EXIT"
+      ]
+    },
+    {
+      "camera_id": "CAM_FLOOR_01",
+      "type": "main_floor",
+      "description": "Main floor camera \u2014 covers F.O.H, Makeup Unit, Nail Unit, Fragrance zones",
+      "covers_zones": [
+        "FOH",
+        "MAKEUP_UNIT",
+        "NAIL_UNIT",
+        "FRAGRANCE"
+      ]
+    },
+    {
+      "camera_id": "CAM_BILLING_01",
+      "type": "billing",
+      "description": "Billing area camera \u2014 covers Cash Counter, PMU, and back wall",
+      "covers_zones": [
+        "CASH_COUNTER",
+        "PMU"
+      ]
+    }
+  ],
+  "zones": [
+    {
+      "zone_id": "ENTRY_EXIT",
+      "zone_name": "Entry / Exit",
+      "sku_zone": null,
+      "type": "entry_exit",
+      "description": "Curved entrance door on the left wall \u2014 entry/exit threshold",
+      "polygon": [
+        [
+          0,
+          150
+        ],
+        [
+          80,
+          150
+        ],
+        [
+          80,
+          360
+        ],
+        [
+          0,
+          360
+        ]
+      ],
+      "entry_line": {
+        "x": 60,
+        "y_start": 150,
+        "y_end": 360,
+        "direction_inbound": "right",
+        "direction_outbound": "left"
+      }
+    },
+    {
+      "zone_id": "SKINCARE_WALL",
+      "zone_name": "Skincare Wall",
+      "sku_zone": "SKINCARE",
+      "type": "product_zone",
+      "description": "Top wall brands \u2014 EB Korean, The Face Shop, Good Vibes, DermDoc, Minimalist, Aqualogica, Lakme Skin, Accessories",
+      "brands": [
+        "EB Korean",
+        "The Face Shop",
+        "Good Vibes",
+        "DermDoc",
+        "Minimalist",
+        "Aqualogica",
+        "Lakme Skin",
+        "Accessories"
+      ],
+      "polygon": [
+        [
+          80,
+          10
+        ],
+        [
+          840,
+          10
+        ],
+        [
+          840,
+          100
+        ],
+        [
+          80,
+          100
+        ]
+      ]
+    },
+    {
+      "zone_id": "MAKEUP_WALL",
+      "zone_name": "Makeup Wall",
+      "sku_zone": "MAKEUP",
+      "type": "product_zone",
+      "description": "Bottom wall brands \u2014 Maybelline, Faces Canada, Lakme, Colorbar+Sugar, Swiss Beauty, Renee NY Bae, Alps Goodness, Streax",
+      "brands": [
+        "Maybelline",
+        "Faces Canada",
+        "Lakme",
+        "Colorbar + Sugar",
+        "Swiss Beauty",
+        "Renee NY Bae",
+        "Alps Goodness",
+        "Streax"
+      ],
+      "polygon": [
+        [
+          80,
+          370
+        ],
+        [
+          840,
+          370
+        ],
+        [
+          840,
+          451
+        ],
+        [
+          80,
+          451
+        ]
+      ]
+    },
+    {
+      "zone_id": "FRAGRANCE",
+      "zone_name": "Fragrance",
+      "sku_zone": "FRAGRANCE",
+      "type": "product_zone",
+      "description": "Fragrance display unit \u2014 center-left floor area",
+      "polygon": [
+        [
+          240,
+          120
+        ],
+        [
+          340,
+          120
+        ],
+        [
+          340,
+          280
+        ],
+        [
+          240,
+          280
+        ]
+      ]
+    },
+    {
+      "zone_id": "NAIL_UNIT",
+      "zone_name": "Nail Unit",
+      "sku_zone": "NAIL",
+      "type": "product_zone",
+      "description": "Nail Counter display unit \u2014 adjacent to Fragrance",
+      "polygon": [
+        [
+          340,
+          140
+        ],
+        [
+          420,
+          140
+        ],
+        [
+          420,
+          280
+        ],
+        [
+          340,
+          280
+        ]
+      ]
+    },
+    {
+      "zone_id": "FOH",
+      "zone_name": "Front of House",
+      "sku_zone": null,
+      "type": "main_floor",
+      "description": "Main customer browsing floor \u2014 central open area",
+      "polygon": [
+        [
+          80,
+          100
+        ],
+        [
+          580,
+          100
+        ],
+        [
+          580,
+          370
+        ],
+        [
+          80,
+          370
+        ]
+      ]
+    },
+    {
+      "zone_id": "MAKEUP_UNIT",
+      "zone_name": "Makeup Unit",
+      "sku_zone": "MAKEUP_SERVICE",
+      "type": "service_zone",
+      "description": "Central makeup application unit / display table",
+      "polygon": [
+        [
+          420,
+          170
+        ],
+        [
+          600,
+          170
+        ],
+        [
+          600,
+          310
+        ],
+        [
+          420,
+          310
+        ]
+      ]
+    },
+    {
+      "zone_id": "CASH_COUNTER",
+      "zone_name": "Cash Counter",
+      "sku_zone": null,
+      "type": "billing",
+      "description": "Billing / checkout counter \u2014 right side of store",
+      "polygon": [
+        [
+          700,
+          100
+        ],
+        [
+          860,
+          100
+        ],
+        [
+          860,
+          310
+        ],
+        [
+          700,
+          310
+        ]
+      ]
+    },
+    {
+      "zone_id": "PMU",
+      "zone_name": "PMU (Permanent Makeup)",
+      "sku_zone": "PMU_SERVICE",
+      "type": "service_zone",
+      "description": "Permanent makeup service area \u2014 right back corner",
+      "polygon": [
+        [
+          840,
+          280
+        ],
+        [
+          940,
+          280
+        ],
+        [
+          940,
+          420
+        ],
+        [
+          840,
+          420
+        ]
+      ]
+    },
+    {
+      "zone_id": "LED_PANEL",
+      "zone_name": "LED Display",
+      "sku_zone": null,
+      "type": "display",
+      "description": "55-inch LED panel \u2014 right wall display",
+      "polygon": [
+        [
+          900,
+          100
+        ],
+        [
+          940,
+          100
+        ],
+        [
+          940,
+          280
+        ],
+        [
+          900,
+          280
+        ]
+      ]
+    }
+  ],
+  "pos_correlation": {
+    "billing_zone_id": "CASH_COUNTER",
+    "correlation_window_minutes": 5,
+    "description": "A visitor is counted as converted if they were in CASH_COUNTER within 5 minutes before a POS transaction timestamp"
+  },
+  "staff_notes": {
+    "salesperson_codes": [
+      "CL2063",
+      "CL2727",
+      "CL1997",
+      "CL2541",
+      "CL2680"
+    ],
+    "description": "Known staff employee_codes from POS data. Use appearance embeddings as primary staff detection; these codes help validate."
+  },
+  "store_id_aliases": [
+    "STORE_BLR_002",
+    "ST1008"
+  ]
+}

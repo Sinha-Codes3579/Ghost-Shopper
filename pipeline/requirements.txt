@@ -1,0 +1,8 @@
+ultralytics==8.2.0
+opencv-python-headless==4.9.0.80
+shapely==2.0.4
+numpy==1.26.4
+torchreid==0.2.5
+torch>=2.0.0
+torchvision>=0.15.0
+pandas==2.2.2
